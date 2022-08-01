@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+:root{
+    /*Primary Color*/
+    --Very-dark-blue/*(main-background)*/: hsl(233, 47%, 7%);
+    --Dark-desaturated-blue /*(card background)*/: hsl(244, 38%, 16%);
+    --Soft-violet /*(accent)*/: hsl(277, 64%, 61%);
+
+    /*Neutral Color*/
+    --White /*(main heading, stats)*/: hsl(0, 0%, 100%);
+    --Slightly-transparent-white /*(main paragraph)*/: hsla(0, 0%, 100%, 0.75);
+    --Slightly-transparent-white /*(stat headings)*/: hsla(0, 0%, 100%, 0.6);
+
+    
+}
+
+*{
+    box-sizing: border-box;
+    color: var(--White);
+}
+
+html body{
+    height: 100%;
+}
+
+body{
+    display: block;
+    background-color: var(--Very-dark-blue);
+    width: 100%;
+    margin: 0;
+}
+
+#stats-card{
+    display: block;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--Dark-desaturated-blue);
+    margin: 25px;
+    
+    
+
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+
+picture{
+    display: block;
+    background-color: var(--Soft-violet);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+
+}
+
+
+#card-body-info>p{
+    color: var(--Slightly-transparent-white);
+    text-align: center;
+    font-family: 'Lexend Deca', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    color: var(--White);
+    font-family: 'Inter', 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h1>b{
+   color: var(--Soft-violet); 
+}
+
+#card-body-info{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px 15px 30px;
+    
+}
+
+p{
+    font-size: 1em;
+}
+
+.stats>p{
+    color: var(--Slightly-transparent-white);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Lexend Deca', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    color: var(--White);
+    font-family: 'Inter', 'Times New Roman', Times, serif ;
+    text-align: center;
+}
+#stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+@media(min-width:1024px) {
+
+    #stats-card{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        background-color: var(--Dark-desaturated-blue);
+        height: 400px;
+        width: 1000px;
+        border-radius: 10px;
+
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+       
+        
+    }
+    
+    img{
+        display: block;
+        height: 100%;
+        width: 100%;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+    }
+    
+    picture{
+        display: block;
+        width: 50%;
+        height: 100%;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0px;
+    }
+    
+    #card-body-info>p{
+        color: var(--Slightly-transparent-white);
+        font-family: 'Lexend Deca', Verdana, Geneva, Tahoma, sans-serif;
+        text-align: left;
+    }
+    
+    h1{
+        color: var(--White);
+        font-family: 'Inter', 'Times New Roman', Times, serif;
+        text-align: left;
+
+    }
+    
+    h1>b{
+       color: var(--Soft-violet); 
+    }
+    
+    #card-body{
+        display: block;
+        width: 50%;
+        margin: 5px 14px 5px 14px;
+        padding: 0 5px 0 5px;
+    }
+
+    #card-body-info{
+        display: flex;
+        flex-direction: column;
+        padding: 15px 30px 15px 30px;
+        
+    }
+    
+    p{
+        font-size: 1em;
+    }
+    
+    .stats>p{
+        color: var(--Slightly-transparent-white);
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Lexend Deca', Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    h2{
+        color: var(--White);
+        font-family: 'Inter', 'Times New Roman', Times, serif ;
+        text-align: center;
+    }
+
+    
+    
+
+    #stats{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        text-align: center;
+        margin: 5px 40px 5px 40px;
+    }
+
+
+}
